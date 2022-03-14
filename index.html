@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="script.js"></script>
+		<meta charset="UTF-8" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+			<link rel  = "icon" href = "https://images-ext-1.discordapp.net/external/AUqOZP8klzeIQFXrPpdcyeUflmw86Wz_DI1aIY5zpFs/https/media.discordapp.net/attachments/919524802719522857/952502658185441310/IMG_3727.png?width=841&height=473"  type = "image/x-icon">
+		<title>Futurecity</title>
+        <style>
+            .styled-table {
+                
+                text-decoration: none;
+                {% comment %} pointer-events: none;         {% endcomment %}
+                color: black;      
+				border-collapse: collapse;
+				margin: 25px 0;
+				font-size: 0.9em;
+				font-family: sans-serif;
+				min-width: 400px;
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+				margin-left: auto;
+  				margin-right: auto;	
+			text-align:center;}
+
+			.styled-table thead tr {
+					background-color: #009879;
+					color: #ffffff;
+					text-align: left;
+				}
+
+
+			.styled-table th{	padding: 12px 15px; }
+
+
+			.styled-table td {
+					padding: 12px 15px;
+				}
+			.styled-table td a {
+				text-decoration: none;
+				pointer-events: none;         
+				font-weight: bold;
+				color: #009879;
+				}
+			.styled-table tbody tr {
+					border-bottom: 1px solid #dddddd;
+				}
+				
+			.styled-table tbody tr:nth-of-type(even) {
+					background-color: #f3f3f3;
+				}
+				
+			.styled-table tbody tr:last-of-type {
+					border-bottom: 2px solid #009879;
+				}
+
+
+			
+			tr:hover {background-color: pink}	
+
+
+			
+		#myInput {
+				
+					
+					font-size: 16px; 
+					padding: 12px 20px 12px 40px; 
+					border: 2px solid #55ffdd; 
+					display:block;
+					margin: auto;
+					margin-top:15px;
+				
+					text-align:center;
+					align-items:center;
+				}
+				h1{
+					display:block;
+					margin: auto;
+					color: #04e7f9;
+					text-align:center;
+				}
+				  
+        </style>
+	</head>
+	<body>
+		<!-- Here a loader is created which
+			loads till response comes -->
+		<div class="d-flex justify-content-center">
+			<div
+			 id="loading">
+				<span >Loading...</span>
+			</div>
+		</div>
+
+		<h1>Registered Goobs</h1>
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+		<table id="employees" class="styled-table"></table>
+	</body>
+</html>
