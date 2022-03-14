@@ -6,7 +6,8 @@ const api_url =
 async function getapi(url) {
 	
 	// Storing response
-	const response = await fetch("http://sgp-20.enviromc.net:25568/v1/players");
+	const response = await fetch("http://sgp-20.enviromc.net:25568/v1/players", {
+        method: "POST"});
 	
 	// Storing data in form of JSON
 	var data = await response.json();
